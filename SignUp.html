@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+</head>
+<style>
+    *{
+        margin:0%;
+        padding: 0%;
+    }
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color:#C9D6DF;
+        background-position: center;
+    }
+    .SignUp{
+        width: 350px;
+        position: absolute;
+        top:50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        color:black;
+    }
+   .form-box{
+    position: relative;
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 30px;
+    width: 400px;
+    height: 600px;
+    justify-content: center;
+    align-items: center;
+   }
+    
+    h1{
+        font-size: 35px;
+        text-transform: uppercase;
+        text-align: center;
+        margin-top: -20px;
+    }
+    p{
+        font-size: 20px;
+        text-transform: capitalize;
+        margin-top: -17px;
+        font-weight: bold;
+        margin-left: 30px;
+    }
+    input{
+        font-size: 15px;
+        padding: 10px 5px;
+        border-radius: 15px;
+        width: 90%;
+        background: transparent;
+        margin-left: 5px;
+        margin-top: -44px;
+    }
+    button{
+        font-size: 13px;
+        font-weight:bolder;
+        margin-top: 35px;
+        padding:10px 15px;
+        width: 80%;
+        border-radius: 40px;
+        margin-left: 40px;
+        background-color: #F20E5F;
+        color: beige;
+
+    }
+    ion-icon{
+        font-size: 20px;
+        position:relative;
+        margin-top: -60px;
+        margin-bottom: -11px;
+    }
+    button:hover{
+        background-color: #00B8A9;
+    }
+    input:invalid{
+    border-bottom: 2px solid #e70041 ;
+    }
+    input:valid{
+        border-bottom: 2px solid #23d346;
+    }
+
+
+</style>
+<body>
+        <div class="form-box"> 
+    <div class="SignUp">
+
+            <h1>Đăng Ký</h1><br>
+            <form action="#" method="post"> 
+            <ion-icon name="person-outline"></ion-icon>
+            <p>Email</p><br>
+            <input type="email" placeholder="Tên đăng nhập" id="username" name="username">
+            <span id="username_error"></span>
+            <ion-icon name="key-outline"></ion-icon>
+            <p>Mật khẩu</p><br>
+            <input type="password" placeholder="Mật khẩu"  minlength="5" id="password" name="password"><br>
+            <ion-icon name="key-outline"></ion-icon>
+            <p>Mật khẩu</p><br>
+            <input type="password" placeholder="Nhập lại mật khẩu"  minlength="5" id="repassword" name="repassword"><br>
+            <ion-icon name="call-outline"></ion-icon>
+            <p>Số điện thoại</p><br>
+            <input type="text" placeholder="Số điện thoại" id="phone" name="phone" >
+            <button type="submit" href="Login.html">Đăng Ký</button>
+            </form>
+    </div>
+</div>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

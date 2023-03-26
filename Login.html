@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        
+        margin:0%;
+        padding: 0%;
+    }
+    body{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        font-family:'Open Sans',sans-serif;
+        background-color:#C9D6DF;
+        background-position: center;
+        
+    }
+    .Login{
+        width: 350px;
+        position: absolute;
+        top:50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        color:rgb(255, 255, 255);
+        
+    }
+   .form-box{
+    position: relative;
+    width: 450px;   
+    height: 550px;
+    background: rgb(75, 210, 111);
+    display: flex   ;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    border:2px solid #DBE2EF;
+    background-color:mintcream ;
+    border-radius: 25px;
+   }
+
+    h1{
+        font-size: 50px;
+        text-transform: uppercase;
+        text-align: center;
+        margin-top: 35px;
+        color: rgb(49, 49, 49);
+    }
+    p{
+        font-size: 20px;
+        color:rgb(49, 49, 49);
+        text-transform: capitalize;
+        margin-top: 22px;
+        font-weight: bold;
+        margin-left: 32px;
+    }
+    input{
+        font-size: 12px;
+        padding: 13px 10px;
+        border-radius: 15px;
+        width: 330px;
+        background: transparent;
+    }
+    button{
+        font-size: 15px;
+        font-weight:bolder;
+        margin-top: 35px;
+        padding:10px 15px;
+        width: 70%;
+        border-radius: 40px;
+        margin-left: 60px;
+        background:#df2359;
+        color: beige;
+
+
+    }
+    ion-icon{
+        font-size: 20px;
+        position:relative;
+        margin-top: -52px;
+        margin-bottom: -48px;
+        color: rgb(49, 49, 49);
+    }
+    button:hover{
+        background-color: #00B8A9;
+    }
+    input:invalid{
+    border-bottom: 2px solid #e70041 ;
+    }
+    input:valid{
+        border-bottom: 2px solid #23d346;
+    }
+
+</style>
+<body>
+        <div class="form-box"> 
+    <div class="Login">
+
+            <h1>Đăng Nhập</h1><br>
+            <form action="#" method="post"> 
+            <ion-icon name="person-outline"></ion-icon>
+            <p>Email</p><br>
+            <input type="email" placeholder="Tên đăng nhập" class="input-login-username">
+            <ion-icon name="key-outline"></ion-icon>
+            <p>Mật khẩu</p><br>
+            <input type="password" placeholder="Mật khẩu" minlength="5" class="input-login-password"><br>
+            <button type="submit" href="TrangChu.html" class="login__signInButton">Đăng nhập</button>
+            </form>
+    </div>
+</div>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+<script src="TrangChu.js"></script>
+
+</html>

@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>WooShop </title>
+    
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:500&display=swap" rel="stylesheet">
+    </head>
+    <style>
+        * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 5%;
+ background-color: rgb(240, 240, 240);
+}
+.Menu{
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+
+}
+.Menu li{
+  padding :6px 10px ;
+  float: left;
+}
+.Menu li:hover{
+  background-color:#ddd;
+}
+.Menu li a{
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: #111112;
+  text-decoration: none;
+  font-size: 15px;
+}
+.Menu li a:hover{
+  color: #0088a9;
+}
+.Login {
+  margin-left: 600px;
+  padding: 7px 20px;
+  background-color: rgba(0, 136, 169, 1);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease 0s;
+  text-decoration: none;
+}
+.dau{
+  margin-top: -5px;
+  font-size: 27px;
+  color: #939393;
+}
+.dau::after{
+ color: #ddd;
+ 
+}
+
+.Login:hover {
+  background-color: #df2359;
+}
+a{
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: #111112;
+  text-decoration: none;
+  font-size: 15px;
+}
+.SignUp {
+  padding: 7px 20px;
+  background-color: rgba(0, 136, 169, 1);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease 0s;
+  text-decoration: none;
+}
+.SignUp:hover {
+  background-color: #df2359;
+}
+.Main{
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 1%;
+} 
+.Main a{
+  font-size: 18px;
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  justify-content:space-around;
+  color: #00B4CC;
+}
+.Main input
+{
+   height: 40px;
+}
+.search {
+  width: 100%;
+  position: relative;
+  display: flex;
+  margin-top: -242px;  
+  margin-left: 400px;
+}
+
+.searchTerm {
+  width: 100%;
+  border: 3px solid #00B4CC;
+  border-right: none;
+  padding: 5px;
+  height: 20px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #9DBFAF;
+}
+
+.searchTerm:focus{
+  color: #00B4CC;
+}
+
+.searchButton {
+  width: 80px;
+  height: 40px;
+  border: 1px solid #00B4CC;
+  background: #00B4CC;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 9px 9px 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+.formbox
+{
+    position: relative;
+    border: 2px solid black;
+    background-color: white;
+    border-radius: 20px;
+    width: 500px;
+    height: 600px;
+    margin-top: -650px;
+    margin-left: 400px;
+}
+.Gioithieu h1{
+        font-family: "Montserrat", sans-serif;
+        font-size: 25px;
+        text-align: center;
+        margin-top: -50px; 
+        margin-right: -1400px;
+    }
+/*Resize the wrap to see the search bar change!*/
+.wrap{
+  width: 30%;
+  position: absolute;
+  top: 52%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.NavigationMenu nav{
+              background-color:#fdfdfd;
+              padding-bottom: 1%;
+              margin-left: 35px;
+          }
+  .NavigationMenu nav a{
+              font-family: "Montserrat", sans-serif;
+              font-weight: 500;
+              display:inline-block;
+              padding: 10px 2%;
+              font-size:18px;
+              color:rgb(17, 16, 16);
+              text-decoration:none;
+          }
+  .NavigationMenu nav a:hover{
+    color: #0088a9;
+    background-color:#ddd;
+  }
+.secondwrap{
+  width: 90%;
+  height: 100px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding-top: 10%;
+    
+}
+.textwrap{
+  width: 50%;
+  height: 10px;
+  position:absolute;
+  top: 70%;
+  left: 73%;
+  transform: translate(-50%, -50%);
+}
+.picture{
+    width: 40%;
+    height: 30%;
+    margin-top: -50px;
+}
+.textwrap p{
+    color: #515151;
+}
+   .Contact{
+        width: 350px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        color:black;
+    }
+    p{
+        font-family: "Montserrat", sans-serif;
+        font-weight: 500;
+        color: #111112;
+        text-decoration: none;
+        font-size: 16px;     
+        margin-top: 30px;
+        margin-left: -20px;
+    }
+    
+   .Gioithieu{
+    padding-top: 2.5%;
+    padding-left: 3%;
+    padding-bottom: 10%;
+   }
+
+   .container1{
+  max-width: 1170px;
+  margin:auto;
+}
+.row{
+  display: flex;
+  flex-wrap: wrap;
+}
+ul{
+  list-style: none;
+}
+.footer{
+  background-color: #24262b;
+    padding: 70px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+  font-size: 18px;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
+}
+.footer-col h3{
+  font-size: 13px;
+  color: #ffffff;
+  text-transform: capitalize;
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+
+
+}
+.footer-col p{
+  font-size: 16px;
+  color: #ffffff;
+  text-transform: capitalize;
+  font-weight: 500;
+}
+.footer-col h4::before{
+  content: '';
+  position: absolute;
+  left:0;
+  bottom: -10px;
+  background-color: #e91e63;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+.footer-col ul li:not(:last-child){
+  margin-bottom: 10px;
+}
+.footer-col ul li a{
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 300;
+  color: #bbbbbb;
+  display: block;
+  transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+  color: #ffffff;
+  padding-left: 8px;
+}
+.footer-col .social-links a{
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255,255,255,0.2);
+  margin:0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+  color: #24262b;
+  background-color: #ffffff;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+
+
+
+  </style>
+    <body>
+        <header>
+            <nav>
+                <ul class="Menu">
+                    <li><a href="#">Cửa Hàng</a></li>
+                    <a class="dau">|</a>
+                    <li><a href="#">Hotline: 0909 787 899</a></li>
+                    <a class="dau">|</a>
+                    <li><a href="#">Trợ giúp</a></li>
+                </ul>
+            </nav>
+            <a class="Login" href="Login.html">Đăng nhập </a>
+            <a class="dau">|</a>
+            <a class="SignUp" href="Signup.html">Đăng ký</a>
+        </header>
+        <main> 
+          <div class="Main">
+              <a href="TrangChu.html"><img src="wooshop-logo.png" width="380px" height="220px" title="WooShop - Siêu thị nội thật & trang trí" > <b style="margin-top: 90px;">Siêu thị nội thất & trang trí</b> </a>
+
+              <div class="wrap">
+                <div class="search">
+                   <input type="text" class="searchTerm" placeholder="Tìm kiếm ....">
+                   <button type="submit" class="searchButton" >
+                      <ion-icon name="search-outline"></ion-icon>
+                  </button>
+                </div>
+             </div>
+          </div>
+        </main>
+
+          <br>
+          <div class="NavigationMenu"> 
+            <nav>
+              <a href="TrangChu.html">Trang Chủ</a>
+              <a href="GioiThieu.html">Giới Thiệu</a>
+              <a href="#">Cửa Hàng</a>
+              <a href="#">Khuyến Mãi</a>
+            </nav>
+        </div>
+<section class="Gioithieu"> 
+        <div class="secondwrap">
+          <div class="Introduce"><h1>CỬA HÀNG NỘI THẤT WOOSHOP</h1></div>
+          <hr style="width: 360px;margin-left: 91%;margin-top: 5px"/>
+          </div>
+          <div class="picture"><img src="GioiThieu.png" alt=""></div>
+          <div class="textwrap">
+                  <p>
+                      <b>WooShop là một web giới thiệu và bán các sản phẩm nội thất.</b><br><br><br>
+                      Chào mừng bạn đến với Cửa hàng Nội thất WooShop <br><br><br>
+                      Khi kinh tế ngày càng phát triển thì nhu cầu có một không gian sống tiện nghi đang trở nên cấp thiết.
+                      Nội thất trong không gian sống đang được các gia đình, doanh nghiệp chú trọng và quan tâm nhất định.
+                      Tuy vậy, trên thị trường sự lặp đi lặp lại nhàm chán trong thiết kế, sự cẩu thả trong sản xuất và sự thiếu dịch
+                      vụ trong chăm sóc khách hàng đang dần tạo nên những cái nhìn không tốt đến các sản phẩm đồ gỗ trong nước.
+                      Hơn lúc nào hết, cần có cuộc cách mạng để tạo ra những sản phẩm đồ gỗ nội thất "Hàng Việt Nam chất lượng cao".
+                      Chính vì thế mà chúng tôi đã tạo ra website nội thất để giới thiệu các sản phẩm thuộc lĩnh vực này. <br><br><br>
+                      WooShop là một trong những websit giới thiệu và bán các sản phẩm trang trí nội thất làm đẹp ngôi hàng các quý khách
+                      hàng của chúng tôi. WooShop là một trong những thương hiệu chúng tôi đang phát triển. Với tiêu chí "không gian sống là
+                      tác phẩm nghệ thuật" đã và đang tạo ra các dòng sản phẩm đẹp, chất lượng cao đi kèm với dịch vụ chu đáo. Đội ngũ
+                      nhân viên của WooShop bao gồm những kiến trúc sư trẻ, thợ lành nghề luôn tâm huyết với từng sản phẩm.
+                  </p>
+          </div>
+        </section>
+          
+
+        <footer class="footer">
+          <div class="container1">
+           <div class="row">
+            <div class="footer-col">
+              <h4>WOOSHOP</h4>
+              <h3>CỬA HÀNG NỘI THẤT WOOSHOP</h3><br>
+              <h3> Địa chỉ : 140 Lê Trọng Tấn, Phường Tây Thạnh, Quận Tân Phú, Tp.HCM</h3>
+            </div>
+             <div class="footer-col">
+               <h4>Về WOOSHOP</h4>
+               <ul>
+                 <li><a href="#">Cửa Hàng</a></li>
+                 <li><a href="GioiThieu.html">Giới Thiệu</a></li>
+                 <li><a href="#">Khuyến Mãi</a></li>
+                 <li><a href="#">FAQS</a></li>
+               </ul>
+             </div>
+            
+             <div class="footer-col">
+               <h4>Danh mục sản phẩm</h4>
+               <ul>
+                 <li><a href="#">Bàn</a></li>
+                 <li><a href="#">Ghế</a></li>
+                 <li><a href="#">Nội thất gia đình</a></li>
+                 <li><a href="#">Trường học</a></li>
+               </ul>
+             </div>
+             <div class="footer-col">
+               <h4>Tìm chúng tôi tại</h4>
+               <div class="social-links">
+                 <a href="#"><i class="fab fa-facebook-f"> <ion-icon name="logo-facebook"></ion-icon></i></a>
+                 <a href="#"><i class="fab fa-twitter"><ion-icon name="logo-twitter"></ion-icon></i></a>
+                 <a href="#"><i class="fab fa-instagram"><ion-icon name="logo-instagram"></ion-icon></i></a>
+                 <a href="#"><i class="fab fa-linkedin-in"><ion-icon name="logo-linkedin"></ion-icon></i></a>
+               </div>
+             </div>
+           </div>
+          </div>
+       </footer>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    </body>
+</html>
